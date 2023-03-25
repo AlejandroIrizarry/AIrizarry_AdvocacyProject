@@ -1,4 +1,230 @@
-html {
-  height: 100%;
-  width: 100%;
+
+/* This file is used to add style onto your website */
+/* Imports
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=DM+Serif+Text&display=swap');
+
+   /* Colors: CSS Hex (Coolors.com)
+   ========================================================================== */
+:root {
+    --kombu-green: #36453bff;
+    --cadet: #596869ff;
+    --ebony: #515751ff;
+    --ivory: #f5f9e9ff;
+    --sage: #c2c1a5ff;
 }
+
+/* General ========================================================================== */
+
+html {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    min-width: 400px;
+  }
+
+  
+body {
+    margin: 0;
+    display: block;
+  }
+  
+  ::selection {
+      color: white;
+      background-color: var(--ebony);
+  }
+  
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active { 
+    text-decoration: none; 
+    color: var(--cadet);
+}
+
+a:visited {
+    color: var(--kombu-green);
+}
+
+
+a:link {
+    color: var(--kombu-green);
+}
+
+a:hover {
+    color: var(--sage);
+}
+  
+h1, h2, h3, h4, h5, p {
+    font-family: 'DM Serif Text', serif;
+}
+
+h2 {
+    color: var(--kombu-green);
+}
+
+p, i {
+    color: var(--ebony);
+}
+
+/* Navigation Bar Section ======================================================================*/
+
+/* Add style to button */
+#theme-button {
+  text-decoration: black;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  padding: 5px;
+  border: var(--sage);
+  border-width: thick;
+  border-radius: 5px;
+  background-color: var(--kombu-green);
+}
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  
+}
+
+.header-container-dark-mode {
+  background-color: var(--cadet) !important;
+}
+
+/* General style rule set for all items in ul */
+.navbar ul {
+    list-style: none;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+    font-family: Arial;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+}
+
+/* Main Header Section ======================================================================*/
+
+.header-container {
+    display: flex;
+    gap: 20px;
+    background-color: var(--ivory);
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10%;
+}
+
+.header-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.header-item:nth-of-type(1) {
+    color: var(--kombu-green);
+}
+
+.header-item:nth-of-type(1) h3 {
+    color: var(--cadet);
+}
+
+.header-item:nth-of-type(2) {
+    margin-left: 1%;
+}
+
+.header-item img {
+    width: 500px;
+    height: 400px;
+    max-width: 2000;
+    border-radius: 50%;
+    border-color: var(--kombu-green);
+    border-style:solid;
+    border-width: 0.2cm;
+}
+
+.header-button {
+    width: 120px;
+    height: 50px;
+    background-color: var(--kombu-green);
+    border: none;
+    border-radius: 15px;
+}
+
+.header-button:nth-of-type(1) {
+    margin: 10% 0 10px 0;
+}
+
+.header-button a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: var(--sage);
+}
+
+/* About Section ======================================================================*/
+.container {
+    flex-flow: row wrap;
+    gap: 20px;
+    
+}
+
+.about-item {
+    flex-flow: row-wrap;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+
+.about-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 100px;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.about-item img {
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+
+
